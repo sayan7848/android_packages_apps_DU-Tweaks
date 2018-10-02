@@ -369,4 +369,7 @@
     <string name="active_edge_app_select_summary">Select an app to launch with the squeeze action</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display.\n\nLong press on apps in the Select App menu to show and choose a specific activity.</string>
 
+    <string name="ignore_rssnr_title">Ignore RSSNR</string>
+    <string name="ignore_rssnr_summary">Ignore RSSNR in LTE signal strength calculation</string>
+
 </resources>

@@ -344,4 +344,7 @@
     <string name="weather_unit_metric" translatable="false">Celsius</string>
     <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
 
+    <string name="ignore_rssnr_title">Ignore RSSNR</string>
+    <string name="ignore_rssnr_summary">Ignore RSSNR in LTE signal strength calculation</string>
+
 </resources>

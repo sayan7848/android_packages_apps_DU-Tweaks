@@ -30,6 +30,12 @@
         android:title="@string/volume_steps_fragment_title"
         android:summary="@string/volume_steps_summary" />
 
+    <Preference
+        android:key="audio_panel"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.AudioPanel"
+        android:title="@string/advanced_volume_panel_title"
+        android:summary="@string/advanced_volume_panel_summary" />
+
 	<com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:title="@string/notification_sound_vib_screen_on_title"

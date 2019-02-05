@@ -401,4 +401,6 @@
     <string name="less_notification_sounds_1m">Every minute</string>
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
+    <string name="accent_picker_nougat_colors">ViperOS nougat colors</string>
+
 </resources>

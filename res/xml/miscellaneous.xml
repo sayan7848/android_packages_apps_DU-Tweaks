@@ -30,4 +30,10 @@
         android:title="@string/volume_steps_fragment_title"
         android:summary="@string/volume_steps_summary" />
 
+	<com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="notification_sound_vib_screen_on"
+        android:title="@string/notification_sound_vib_screen_on_title"
+        android:summary="@string/notification_sound_vib_screen_on_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>

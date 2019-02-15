@@ -26,7 +26,7 @@
 
     <Preference
         android:key="vol_steps"
-        android:fragment="org.aospextended.extensions.fragments.VolumeStepsFragment"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.VolumeStepsFragment"
         android:title="@string/volume_steps_fragment_title"
         android:summary="@string/volume_steps_summary" />
 

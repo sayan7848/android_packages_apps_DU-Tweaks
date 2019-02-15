@@ -17,5 +17,17 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/miscellaneous_title" >
+	
+	<com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_to_sleep_title"
+        android:summary="@string/double_tap_to_sleep_summary"
+        android:defaultValue="true" />
+
+    <Preference
+        android:key="vol_steps"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.VolumeStepsFragment"
+        android:title="@string/volume_steps_fragment_title"
+        android:summary="@string/volume_steps_summary" />
 
 </PreferenceScreen>

@@ -360,4 +360,36 @@
     <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
     <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
 
+    <string name="ignore_rssnr_title">Ignore RSSNR</string>
+    <string name="ignore_rssnr_summary">Ignore RSSNR in LTE signal strength calculation</string>
+
+    <!-- Double tap-to-sleep -->
+    <string name="double_tap_to_sleep_title">Status bar</string>
+    <string name="double_tap_to_sleep_summary">Double-tap status bar to put the device to sleep</string>
+
+    <!-- Volume Steps Fragment -->
+    <string name="volume_steps_fragment_title">Volume steps</string>
+    <string name="volume_steps_summary">Customize volume steps</string>
+    <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
+    <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
+    <string name="volume_steps_music_title">Volume steps: Media</string>
+    <string name="volume_steps_notification_title">Volume steps: Notification</string>
+    <string name="volume_steps_ring_title">Volume steps: Ringer</string>
+    <string name="volume_steps_system_title">Volume steps: System</string>
+    <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
+    <string name="volume_steps_reset">Reset</string>
+
+    <!-- Notification with screen on -->
+    <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
+    <string name="notification_sound_vib_screen_on_summary">Disable to block notifications sound and vibration when the screen is awake</string>
+
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">Smart notification sounds</string>
+    <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
+    <string name="less_notification_sounds_default">App default</string>
+    <string name="less_notification_sounds_10s">Every 10 seconds</string>
+    <string name="less_notification_sounds_30s">Every 30 seconds</string>
+    <string name="less_notification_sounds_1m">Every minute</string>
+    <string name="less_notification_sounds_2m">Every 2 minutes</string>
+
 </resources>

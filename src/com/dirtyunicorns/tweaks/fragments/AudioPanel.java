@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2018 The Dirty Unicorns Project
+ * Copyright (C) 2018 AquariOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@ package com.dirtyunicorns.tweaks.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.PreferenceCategory;
@@ -39,35 +38,20 @@ import com.android.settings.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Miscellaneous extends SettingsPreferenceFragment
-        implements Preference.OnPreferenceChangeListener, Indexable {
-
-    private ListPreference mAnnoyingNotification;
+public class AudioPanel extends SettingsPreferenceFragment 
+    implements Preference.OnPreferenceChangeListener, Indexable {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.miscellaneous);
-
-        mAnnoyingNotification = (ListPreference) findPreference("mute_annoying_notifications_threshold");
-        mAnnoyingNotification.setOnPreferenceChangeListener(this);
-        int threshold = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
-                0, UserHandle.USER_CURRENT);
-        mAnnoyingNotification.setValue(String.valueOf(threshold));
+        addPreferencesFromResource(R.xml.audio_panel);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference.equals(mAnnoyingNotification)) {
-            int mode = Integer.parseInt(((String) newValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, mode, UserHandle.USER_CURRENT);
-            return true;
-        }
         return false;
     }
-
+    
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.DIRTYTWEAKS;

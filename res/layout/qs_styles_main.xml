@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_gravity="center"
+        android:layout_gravity="top|center_horizontal"
         android:orientation="vertical">
 
         <HorizontalScrollView
@@ -44,6 +44,9 @@
                 <include layout="@layout/qs_styles_roundedsquare" />
                 <include layout="@layout/qs_styles_squircle" />
                 <include layout="@layout/qs_styles_teardrop" />
+                <include layout="@layout/qs_styles_circlegradient" />
+                <include layout="@layout/qs_styles_circleoutline" />
+                <include layout="@layout/qs_styles_justicons" />
 
             </GridLayout>
         </HorizontalScrollView>

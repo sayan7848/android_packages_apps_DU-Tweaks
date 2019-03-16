@@ -91,16 +91,6 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
 
         LinearLayout teardrop = mView.findViewById(R.id.QsTileStyleTearDrop);
         setLayout("4", teardrop);
-
-        LinearLayout circlegradient = mView.findViewById(R.id.QsTileStyleCircleGradient);
-        setLayout("5", circlegradient);
-
-        LinearLayout circleoutline = mView.findViewById(R.id.QsTileStyleCircleOutline);
-        setLayout("6", circleoutline);
-
-        LinearLayout justicons = mView.findViewById(R.id.QsTileStyleJustIcons);
-        setLayout("7", justicons);
-
     }
 
     @Override
@@ -149,9 +139,6 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
         LinearLayout roundedsquare = mView.findViewById(R.id.QsTileStyleRoundedSquare);
         LinearLayout squircle = mView.findViewById(R.id.QsTileStyleSquircle);
         LinearLayout teardrop = mView.findViewById(R.id.QsTileStyleTearDrop);
-        LinearLayout circlegradient = mView.findViewById(R.id.QsTileStyleCircleGradient);
-        LinearLayout circleoutline = mView.findViewById(R.id.QsTileStyleCircleOutline);
-        LinearLayout justicons = mView.findViewById(R.id.QsTileStyleJustIcons);
 
         TypedValue typedValue = new TypedValue();
         res.getValue(R.dimen.qs_styles_layout_opacity, typedValue, true);
@@ -162,65 +149,26 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             roundedsquare.setAlpha(mLayoutOpacity);
             squircle.setAlpha(mLayoutOpacity);
             teardrop.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            circleoutline.setAlpha(mLayoutOpacity);
-            justicons.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 2 )) {
             square.setAlpha(mLayoutOpacity);
             roundedsquare.setAlpha((float) 1.0);
             squircle.setAlpha(mLayoutOpacity);
             teardrop.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            circleoutline.setAlpha(mLayoutOpacity);
-            justicons.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 3 )) {
             square.setAlpha(mLayoutOpacity);
             roundedsquare.setAlpha(mLayoutOpacity);
             squircle.setAlpha((float) 1.0);
             teardrop.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            circleoutline.setAlpha(mLayoutOpacity);
-            justicons.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 4 )) {
             square.setAlpha(mLayoutOpacity);
             roundedsquare.setAlpha(mLayoutOpacity);
             squircle.setAlpha(mLayoutOpacity);
             teardrop.setAlpha((float) 1.0);
-            circlegradient.setAlpha(mLayoutOpacity);
-            circleoutline.setAlpha(mLayoutOpacity);
-            justicons.setAlpha(mLayoutOpacity);
-        } else  if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 5 )) {
-            square.setAlpha(mLayoutOpacity);
-            roundedsquare.setAlpha(mLayoutOpacity);
-            squircle.setAlpha(mLayoutOpacity);
-            teardrop.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha((float) 1.0);
-            circleoutline.setAlpha(mLayoutOpacity);
-            justicons.setAlpha(mLayoutOpacity);
-        } else  if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 6 )) {
-            square.setAlpha(mLayoutOpacity);
-            roundedsquare.setAlpha(mLayoutOpacity);
-            squircle.setAlpha(mLayoutOpacity);
-            teardrop.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            circleoutline.setAlpha((float) 1.0);
-            justicons.setAlpha(mLayoutOpacity);
-        } else  if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 7 )) {
-            square.setAlpha(mLayoutOpacity);
-            roundedsquare.setAlpha(mLayoutOpacity);
-            squircle.setAlpha(mLayoutOpacity);
-            teardrop.setAlpha(mLayoutOpacity);
-            circlegradient.setAlpha(mLayoutOpacity);
-            circleoutline.setAlpha(mLayoutOpacity);
-            justicons.setAlpha((float) 1.0);
         } else {
             square.setAlpha((float) 1.0);
             roundedsquare.setAlpha((float) 1.0);
             squircle.setAlpha((float) 1.0);
             teardrop.setAlpha((float) 1.0);
-            circlegradient.setAlpha((float) 1.0);
-            circleoutline.setAlpha((float) 1.0);
-            justicons.setAlpha((float) 1.0);
         }
     }
 }

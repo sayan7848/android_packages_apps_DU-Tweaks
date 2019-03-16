@@ -405,12 +405,9 @@
 
     <!-- Audio Panel view  -->
     <string name="advanced_volume_panel_title">Advanced volume panel</string>
-    <string name="advanced_volume_panel_summary">Select addional volume controls to be shown in main volume panel</string>
-    <string name="volume_panel_info_text">Please keep in mind that volume panel size increases with each additional volume element selected above. &#xD;TODO: Bring back expanding/collapsing volume panel, as seen in AquariOS 8.1.0.</string>
-    <string name="audio_panel_view_media_title">Media</string>
-    <string name="audio_panel_view_ringer_title">Ringer</string>
+    <string name="advanced_volume_panel_summary">Select addional volume controls to be shown in expanded volume panel</string>
+    <string name="volume_panel_info_text">Please keep in mind that expanded volume panel size increases with each additional volume element selected above</string>
     <string name="audio_panel_view_notification_title">Notification</string>
-    <string name="audio_panel_view_alarm_title">Alarm</string>
     <string name="audio_panel_view_voice_title">In-call voice</string>
     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
     <string name="audio_options_category">Audio options</string>

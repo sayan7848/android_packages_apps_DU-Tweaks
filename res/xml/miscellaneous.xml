@@ -17,5 +17,36 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/miscellaneous_title" >
+	
+	<com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_to_sleep_title"
+        android:summary="@string/double_tap_to_sleep_summary"
+        android:defaultValue="true" />
+
+    <Preference
+        android:key="vol_steps"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.VolumeStepsFragment"
+        android:title="@string/volume_steps_fragment_title"
+        android:summary="@string/volume_steps_summary" />
+
+    <Preference
+        android:key="audio_panel"
+        android:fragment="com.dirtyunicorns.tweaks.fragments.AudioPanel"
+        android:title="@string/advanced_volume_panel_title"
+        android:summary="@string/advanced_volume_panel_summary" />
+
+	<com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="notification_sound_vib_screen_on"
+        android:title="@string/notification_sound_vib_screen_on_title"
+        android:summary="@string/notification_sound_vib_screen_on_summary"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:key="mute_annoying_notifications_threshold"
+        android:title="@string/less_notification_sounds_title"
+        android:summary="@string/less_notification_sounds_summary"
+        android:entries="@array/less_notification_sounds_entries"
+        android:entryValues="@array/less_notification_sounds_values" />
 
 </PreferenceScreen>

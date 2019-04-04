@@ -412,5 +412,9 @@
     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
     <string name="audio_options_category">Audio options</string>
     <string name="display_options_category">Display options</string>
+   
+    <!-- App Ops --> 
+    <string name="app_ops_title">App Ops</string>
+    <string name="app_ops_summary">Application permissions control</string>
 
 </resources>

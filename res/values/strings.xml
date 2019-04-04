@@ -414,7 +414,7 @@
     <string name="display_options_category">Display options</string>
    
     <!-- App Ops --> 
-    <string name="app_ops_title">App Ops</string>
+    <string name="app_ops_title">Privacy Guard</string>
     <string name="app_ops_summary">Application permissions control</string>
 
 </resources>
